@@ -10,9 +10,10 @@ public class MyHouse
     // instance variables - replace the example below with your own
     private Square base; 
     private Triangle roof;
-    private Circle sun; 
+    private Circle sun;
+    private Tree pineTree;
 
-    /**
+    /**s
      * Constructor for objects of class Myhouse
      */
     public MyHouse()
@@ -21,6 +22,9 @@ public class MyHouse
         base = new Square();
         roof = new Triangle();
         sun = new Circle();
+        
+        // Create a pine tree 
+        pineTree = new Tree(0,0);
     }
 
     /**
@@ -33,18 +37,32 @@ public class MyHouse
         // Set upthe sun(Ctrl-Space)  
         sun.makeVisible();
         sun.changeSize(90);
-        sun.changeColor("red");
-        sun.moveHorizontal(230);
-        sun.moveVertical(-180);
+         sun.changeColor("red");
+         sun.moveHorizontal(220);
+        sun.moveVertical(-90);
         
-        // set up the roof
-        roof.makeVisible();
-        roof.changeSize(100,100);
+        // // set up the roof
+         roof.makeVisible();
+         roof.changeColor("black");
+         roof.changeSize(90,140);
+         roof.moveHorizontal(103);
+         roof.moveVertical(30);
+         
+      
         
         
-        // set up the base of the house
+        
+        
+        // // set up the base of the house
         base.makeVisible();
-        base.changeSize(95);
+        base.changeColor("blue");
+         base.changeSize(125);
+         base.moveVertical(83);
+         base.moveHorizontal(30);
+         
+         
+        
+         
         
     }
 }
